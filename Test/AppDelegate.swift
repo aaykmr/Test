@@ -13,12 +13,19 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        //let initialVC = storyBoard.instantiateViewController(withIdentifier: "InitialNavigationController") as! UINavigationController
+        /*let viewController = ViewController(nibName: "ViewController", bundle: nil)
+        let initialVC = UINavigationController(rootViewController: viewController)
+        window?.addSubview(initialVC.view)
+        window?.makeKeyAndVisible()*/
+        //self.window?.rootViewController = initialVC
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
